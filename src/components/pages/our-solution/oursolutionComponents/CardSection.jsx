@@ -38,9 +38,9 @@ const CardSection = () => {
               className={`text-center bg-white border-b-4 ${card.borderColor}`}
             >
               <div className="relative overflow-hidden">
-                <img src={card.img} alt={card.title} className="w-full h-48" />
+                <img src={card.img} alt={card.title} className="w-full h-60" />
               </div>
-              <h3 className="text-xl font-semibold text-purple-700 mt-4">
+              <h3 className="text-lg font-semibold text-[#4300ff] mt-4">
                 {card.title}
               </h3>
               <button className="mt-4 mb-4 bg-blue-900 text-white px-7 py-2 rounded-4xl text-[10px] font-medium hover:text-blue-800 border hover:border-blue-900 hover:bg-white transition">

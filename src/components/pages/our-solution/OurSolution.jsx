@@ -4,6 +4,8 @@ import InnovativeSolution from './oursolutionComponents/InnovativeSolution'
 import WorkForceSolution from './oursolutionComponents/WorkForceSolution'
 import CardSection from './oursolutionComponents/CardSection'
 import ManageService from './oursolutionComponents/ManageService'
+import OurApproach from './oursolutionComponents/OurApproach'
+import PreferredChoice from './oursolutionComponents/PreferredChoice'
 
 const OurSolution = () => {
   return (
@@ -13,6 +15,8 @@ const OurSolution = () => {
       <WorkForceSolution/>
       <CardSection/>
       <ManageService/>
+      <OurApproach/>
+      <PreferredChoice/>
     </>
   )
 }

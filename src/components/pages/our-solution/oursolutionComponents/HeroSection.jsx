@@ -4,11 +4,11 @@ import Banner from '../../../../assets/Our-solutions-banner-1.png';
 const HeroSection = () => {
   return (
     <div
-      className="relative flex flex-col items-end justify-end text-center p-5 bg-cover bg-center"
+      className="flex flex-col items-end justify-center text-center p-5 bg-cover bg-right lg:bg-center h-auto lg:h-[451px]"
       style={{ backgroundImage: `url(${Banner})` }}
     >
-      <div className="bg-transparent bg-opacity-90 p-10 rounded-lg">
-        <h1 className="text-white text-3xl md:text-4xl font-bold">
+      <div className="bg-transparent bg-opacity-90 p-5 md:p-10 ">
+        <h1 className="text-white text-1xl md:text-[26px] font-semibold">
           Empowering businesses through <br /> applied human intelligence
         </h1>
         <div className="mt-4 text-xl font-semibold text-yellow-400">

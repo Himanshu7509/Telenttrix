@@ -46,41 +46,40 @@ const features = [
 const PreferredChoice = () => {
   return (
     <div className="py-10">
-      {/* Title */}
       <div className="bg-blue-900 py-6 text-center">
-        <h2 className="text-white text-[28px] font-semibold">
+        <h2 className="text-white text-[24px] sm:text-[28px] font-semibold">
           Preferred Choice for Clients
         </h2>
-        <div className="w-86 border-t-4 border-[#fba91e] mx-auto mt-2"></div>
+        <div className="w-36 border-t-4 border-[#fba91e] mx-auto mt-2"></div>
       </div>
 
-      {/* Content */}
       <div className="flex justify-center">
-        <div className="w-[80%]">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 px-10 mt-12 mb-12">
+        <div className="w-[90%] sm:w-[80%]">
+          <div className="flex flex-wrap justify-start gap-10 px-4 sm:px-10 mt-12 mb-12">
             {features.map((feature, index) => (
-              <div key={index} className="flex items-start space-x-6">
+              <div key={index} className="flex items-start justify-start space-x-4 max-w-lg">
                 <img
                   src={feature.image}
                   alt={feature.title}
-                  className="w-[80px] h-[80px] object-contain"
+                  className="w-[70px] h-[70px] sm:w-[80px] sm:h-[80px] object-contain"
                 />
                 <div>
-                  <h3 className={`text-md font-bold ${feature.color}`}>
+                  <h3 className={`text-md font-semibold ${feature.color}`}>
                     {feature.title}
                   </h3>
-                  <p className="text-gray-700 text-md font-bold mt-4">{feature.description}</p>
+                  <p className="text-gray-700 text-[14px] sm:text-md font-bold mt-3">
+                    {feature.description}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* Contact Button */}
           <div className="mt-6 text-center">
-            <p className="font-semibold text-lg">
+            <p className="font-semibold text-md sm:text-lg">
               To find out how we can help you
             </p>
-            <button className="mt-3 bg-blue-900 text-white px-6 py-2 rounded-full text-[15px] border border-blue-900 font-semibold hover:bg-white hover:text-blue-900 transition">
+            <button className="mt-3 bg-blue-900 text-white px-6 py-2 rounded-full text-[14px] sm:text-[15px] border border-blue-900 font-semibold hover:bg-white hover:text-blue-900 transition">
               CONTACT US TODAY!
             </button>
           </div>

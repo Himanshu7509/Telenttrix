@@ -30,7 +30,7 @@ const cardData = [
 const CardSection = () => {
   return (
     <div className="w-full flex justify-center mt-12 mb-10">
-      <div className="w-[75%]">
+      <div className="w-[90%] md:w-[75%]">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {cardData.map((card, index) => (
             <div

@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import { Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './components/pages/home/Home'
 import Footer from './components/common/footer/Footer'
 import Header from './components/common/header/Header'
@@ -15,6 +15,7 @@ import ContactUs from './components/pages/contact-us/ContactUs'
 const App = () => {
   return (
     <>
+    <BrowserRouter>
       <Header/>
       <Routes>
         <Route path='/' element={<Home/>} />
@@ -26,6 +27,7 @@ const App = () => {
         <Route path='/contact' element={<ContactUs/>} />
       </Routes>
       <Footer/>
+      </BrowserRouter>
     </>
   )
 }

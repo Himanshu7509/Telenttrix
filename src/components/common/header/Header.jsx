@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { FiChevronDown, FiSearch, FiX, FiMenu } from "react-icons/fi";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import logo from "../../../assets/headerlogo.png";
@@ -57,8 +57,8 @@ const Header = () => {
         </div>
 
         <nav className="hidden lg:flex space-x-6 items-center">
-          <a
-            href="/"
+          <Link
+            to="/"
             className={` ${
               currentPath === "/"
                 ? "bg-[#293b95] text-white px-4 py-2 rounded-full"
@@ -66,11 +66,11 @@ const Header = () => {
             }`}
           >
             Home
-          </a>
+          </Link>
 
           <div className="relative group">
-            <a
-              href="/about"
+            <Link
+              to="/about"
               className={`flex items-center gap-1 ${
                 currentPath === "/about"
                   ? "bg-[#293b95] text-white px-4 py-2 rounded-full"
@@ -78,38 +78,38 @@ const Header = () => {
               }`}
             >
               About Us <FiChevronDown />
-            </a>
+            </Link>
             <div className="absolute left-0 mt-2 px-2 hidden group-hover:block bg-[#222] text-white shadow-md w-52">
-              <a
-                href="#"
+              <Link
+                to="#"
                 className="block px-4 py-2 text-[14px] border-b border-gray-400 hover:bg-[#222]"
               >
                 Artech Advantage
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="#"
                 className="block px-4 py-2 text-[14px] border-b border-gray-400 hover:bg-[#222]"
               >
                 Great Place to Work
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="#"
                 className="block px-4 py-2 text-[14px] border-b border-gray-400 hover:bg-[#222]"
               >
                 Awards
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="#"
                 className="block px-4 py-2 text-[14px] border-b border-gray-400 hover:bg-[#222]"
               >
                 Certifications and Accolades
-              </a>
+              </Link>
             </div>
           </div>
 
           <div className="relative group">
-            <a
-              href="/our-solution"
+            <Link
+              to="/our-solution"
               className={`flex items-center gap-1 ${
                 currentPath === "/solution"
                   ? "bg-[#293b95] text-white px-4 py-2 rounded-full"
@@ -117,32 +117,32 @@ const Header = () => {
               }`}
             >
               Our Solutions <FiChevronDown />
-            </a>
+            </Link>
             <div className="absolute left-0 mt-2 px-2 hidden group-hover:block bg-[#222] text-white shadow-md w-52">
-              <a
-                href="#"
+              <Link
+                to="#"
                 className="block px-4 py-2 text-[14px] border-b border-gray-400 hover:bg-[#222]"
               >
                 IT Solutions
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="#"
                 className="block px-4 py-2 text-[14px] border-b border-gray-400 hover:bg-[#222]"
               >
                 Consulting Services
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="#"
                 className="block px-4 py-2 text-[14px] border-b border-gray-400 hover:bg-[#222]"
               >
                 Project Management
-              </a>
+              </Link>
             </div>
           </div>
 
           <div className="relative group">
-            <a
-              href="/career"
+            <Link
+              to="/career"
               className={`flex items-center gap-1 ${
                 currentPath === "/careers"
                   ? "bg-[#253e91] text-white px-4 py-2 rounded-full"
@@ -150,25 +150,25 @@ const Header = () => {
               }`}
             >
               Careers <FiChevronDown />
-            </a>
+            </Link>
             <div className="absolute left-0 mt-2 px-2 hidden group-hover:block bg-[#222] text-white shadow-md w-52">
-              <a
-                href="#"
+              <Link
+                to="#"
                 className="block px-4 py-2 text-[14px] border-b border-gray-400 hover:bg-[#222]"
               >
                 Corporate Jobs
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="#"
                 className="block px-4 py-2 text-[14px] border-b border-gray-400 hover:bg-[#222]"
               >
                 Consultant Jobs
-              </a>
+              </Link>
             </div>
           </div>
 
-          <a
-            href="/community"
+          <Link
+            to="/community"
             className={` ${
               currentPath === "/community"
                 ? "bg-[#293b95] text-white px-4 py-2 rounded-full"
@@ -176,9 +176,9 @@ const Header = () => {
             }`}
           >
             Community First Initiatives
-          </a>
-          <a
-            href="/resources"
+          </Link>
+          <Link
+            to="/resources"
             className={` ${
               currentPath === "/resources"
                 ? "bg-[#293b95] text-white px-4 py-2 rounded-full"
@@ -186,9 +186,9 @@ const Header = () => {
             }`}
           >
             Resources
-          </a>
-          <a
-            href="/contact"
+          </Link>
+          <Link
+            to="/contact"
             className={` ${
               currentPath === "/contact"
                 ? "bg-[#293b95] text-white px-4 py-2 rounded-full"
@@ -196,7 +196,7 @@ const Header = () => {
             }`}
           >
             Contact Us
-          </a>
+          </Link>
 
           <FiSearch className="text-gray-600 text-lg cursor-pointer" />
           <FaLinkedinIn className="text-[#293b95] text-lg" />
@@ -243,9 +243,9 @@ const Header = () => {
 
           <nav className="mt-4 px-5">
             <div className="border-b border-gray-600 py-3">
-              <a href="/" className="text-lg flex justify-between">
+              <Link to="/" className="text-lg flex justify-between">
                 Home
-              </a>
+              </Link>
             </div>
 
             <div className="border-b border-gray-600 py-3">
@@ -257,18 +257,18 @@ const Header = () => {
               </button>
               {dropdowns.about && (
                 <div className="pl-4 mt-2">
-                  <a href="#" className="block border-b border-[#222] py-2">
+                  <Link to="#" className="block border-b border-[#222] py-2">
                     Artech Advantage
-                  </a>
-                  <a href="#" className="block border-b border-[#222] py-2">
+                  </Link>
+                  <Link to="#" className="block border-b border-[#222] py-2">
                     Great Place to Work
-                  </a>
-                  <a href="#" className="block border-b border-[#222] py-2">
+                  </Link>
+                  <Link to="#" className="block border-b border-[#222] py-2">
                     Awards
-                  </a>
-                  <a href="#" className="block py-2">
+                  </Link>
+                  <Link to="#" className="block py-2">
                     Certifications and Accolades
-                  </a>
+                  </Link>
                 </div>
               )}
             </div>
@@ -282,15 +282,15 @@ const Header = () => {
               </button>
               {dropdowns.solutions && (
                 <div className="pl-4 mt-2">
-                  <a href="#" className="block border-b border-[#222] py-2">
+                  <Link to="#" className="block border-b border-[#222] py-2">
                     IT Solutions
-                  </a>
-                  <a href="#" className="block border-b border-[#222] py-2">
+                  </Link>
+                  <Link to="#" className="block border-b border-[#222] py-2">
                     Consulting Services
-                  </a>
-                  <a href="#" className="block py-2">
+                  </Link>
+                  <Link to="#" className="block py-2">
                     Project Management
-                  </a>
+                  </Link>
                 </div>
               )}
             </div>
@@ -304,30 +304,30 @@ const Header = () => {
               </button>
               {dropdowns.careers && (
                 <div className="pl-4 mt-2">
-                  <a href="#" className="block border-b border-[#222] py-2">
+                  <Link to="#" className="block border-b border-[#222] py-2">
                     Corporate Jobs
-                  </a>
-                  <a href="#" className="block py-2">
+                  </Link>
+                  <Link to="#" className="block py-2">
                     Consultant Jobs
-                  </a>
+                  </Link>
                 </div>
               )}
             </div>
 
             <div className="border-b border-gray-600 py-3">
-              <a href="/community" className="text-lg flex justify-between">
+              <Link to="/community" className="text-lg flex justify-between">
                 Community First Initiatives
-              </a>
+              </Link>
             </div>
             <div className="border-b border-gray-600 py-3">
-              <a href="#" className="text-lg flex justify-between">
+              <Link to="#" className="text-lg flex justify-between">
                 Resources
-              </a>
+              </Link>
             </div>
             <div className="border-b border-gray-600 py-3">
-              <a href="#" className="text-lg flex justify-between">
+              <Link to="#" className="text-lg flex justify-between">
                 Contact Us
-              </a>
+              </Link>
             </div>
           </nav>
         </div>

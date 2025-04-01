@@ -6,13 +6,12 @@ import CardSection from './oursolutionComponents/CardSection'
 import ManageService from './oursolutionComponents/ManageService'
 import OurApproach from './oursolutionComponents/OurApproach'
 import PreferredChoice from './oursolutionComponents/PreferredChoice'
-import Header from '../../common/header/Header'
-import Footer from '../../common/footer/Footer'
+
 
 const OurSolution = () => {
   return (
     <>
-    <Header/>
+
       <HeroSection/>
       <InnovativeSolution/>
       <WorkForceSolution/>
@@ -20,7 +19,7 @@ const OurSolution = () => {
       <ManageService/>
       <OurApproach/>
       <PreferredChoice/>
-      <Footer/>
+     
     </>
   )
 }

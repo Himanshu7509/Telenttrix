@@ -8,12 +8,14 @@ import Community from './components/pages/community/Community'
 import AboutUs from './components/pages/about-us/AboutUs'
 import Resources from './components/pages/resources/Resources'
 import ContactUs from './components/pages/contact-us/ContactUs'
+import Header from './components/common/header/Header'
+import Footer from './components/common/footer/Footer'
 
 
 const App = () => {
   return (
     <>
-      
+      <Header/>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<AboutUs/>} />
@@ -23,7 +25,7 @@ const App = () => {
         <Route path='/resources' element={<Resources/>} />
         <Route path='/contact' element={<ContactUs/>} />
       </Routes>
-      
+      <Footer/>
     </>
   )
 }

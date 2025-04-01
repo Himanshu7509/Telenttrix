@@ -7,13 +7,12 @@ import TeamGallery from './careerComponents/TeamGallery'
 import Pace from './careerComponents/Pace'
 import OurValues from './careerComponents/OurValues'
 import OurCulture from './careerComponents/OurCulture'
-import Header from '../../common/header/Header'
-import Footer from '../../common/footer/Footer'
+
 
 const Careers = () => {
   return (
     <>
-    <Header/>
+   
         <HeroSec/>
         <Certification/>
         <OurTalent/>
@@ -22,7 +21,7 @@ const Careers = () => {
         <OurValues/>
         <OurBenefits/>
         <Pace/>
-        <Footer/>
+ 
     </>
   )
 }

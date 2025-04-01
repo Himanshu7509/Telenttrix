@@ -10,7 +10,7 @@ import CertificationComponent from './homeComponents/CertificationComponent'
 
 const Home = () => {
   return (
-    <>
+    <div className='mt-12 sm:mt-22'>
    
       <HeroSec/>
       <CountriesComponent/>
@@ -19,7 +19,7 @@ const Home = () => {
       <WhyArtech/>
       <CertificationComponent/>
       
-    </>
+    </div>
   )
 }
 

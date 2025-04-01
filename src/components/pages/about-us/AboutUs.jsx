@@ -10,7 +10,7 @@ import Winning from './aboutComponents/Winning'
 
 const AboutUs = () => {
   return (
-    <div className='mt-12 sm:mt-22'>
+    <div>
       
         <HeroSec/>
         <Advantage/>

@@ -11,7 +11,7 @@ import OurCulture from './careerComponents/OurCulture'
 
 const Careers = () => {
   return (
-    <div className='mt-12 sm:mt-22'>
+    <div >
    
         <HeroSec/>
         <Certification/>

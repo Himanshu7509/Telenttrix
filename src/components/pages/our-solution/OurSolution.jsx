@@ -10,7 +10,7 @@ import PreferredChoice from './oursolutionComponents/PreferredChoice'
 
 const OurSolution = () => {
   return (
-    <div className='mt-12 sm:mt-22'>
+    <div >
 
       <HeroSection/>
       <InnovativeSolution/>

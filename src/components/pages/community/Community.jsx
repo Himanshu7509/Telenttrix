@@ -8,7 +8,7 @@ import Sustainability from './communityComponent/Sustainablity'
 
 const Community = () => {
   return (
-    <div className='mt-12 sm:mt-22'>
+    <div >
 
         <Building/>
         <School/>

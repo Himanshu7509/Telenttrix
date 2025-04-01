@@ -5,7 +5,7 @@ import ManageServiceCards from './resourcesComponent/ManageServiceCards'
 
 const Resources = () => {
   return (
-    <div className='mt-12 sm:mt-22'>
+    <div >
   
         <Articles/>
         <ManageServiceCards/>

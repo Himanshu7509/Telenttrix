@@ -10,6 +10,7 @@ import Resources from './components/pages/resources/Resources'
 import ContactUs from './components/pages/contact-us/ContactUs'
 import Header from './components/common/header/Header'
 import Footer from './components/common/footer/Footer'
+import CaseStudies from './components/pages/our-solution/oursolutionDropdown/caseStudies/CaseStudies'
 
 
 const App = () => {
@@ -19,7 +20,8 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<AboutUs/>} />
-        <Route path='/our-solution' element={<OurSolution/>} />
+        <Route path='/our-solutions' element={<OurSolution/>} />
+        <Route path='/casestudies' element={<CaseStudies/>} />
         <Route path='/career' element={<Careers/>} />
         <Route path='/community' element={<Community/>} />
         <Route path='/resources' element={<Resources/>} />
